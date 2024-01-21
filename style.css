@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  font-weight: bold;
+  font-size: 30px; 
+}
+
+/* #title {
+  
+} */
+
+button {
+  font-size: 5rem;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: aqua;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+button:hover {
+  background-color: hsl(180, 100%, 48%);
+}
+
+button:active {
+  background-color: hsl(180, 100%, 43%);
+}
+
+.display-choices {
+  margin: 5px;
+}
+
+/* #player-display {
+  color: green;
+}
+
+#computer-display {
+  color: rgb(128, 38, 0);
+} */
+
+#result-display {
+  font-size: 60px;
+}
+
+.scores {
+  margin: 10px;
+}
+
+.greenText, #player-score-display{
+  color: hsl(130, 84%, 54%);
+}
+.redText, #computer-score-display{
+  color: hsl(0, 84%, 60%);
+}
+.defaultText {
+  color: #000;
+}
