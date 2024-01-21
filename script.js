@@ -9,17 +9,17 @@ let computerScore = 0;
 let message = '';
 
 function playGame(choice) {
+  resultDisplay.classList.remove('greenText', 'redText'); // YESSSS
   const computerChoice = option[Math.floor(Math.random() * 3)];
 
   playerDisplay.textContent = choice;
   computerDisplay.textContent = computerChoice;
-  // console.log(resultDisplay.classList);
+  
   if(choice == computerChoice) {
     resultDisplay.textContent = 'Seri eyy';
-    // resultDisplay.classList.remove('greenText', 'redText');
     return;
   }
-  // console.log(resultDisplay.classList);
+  
   switch (choice) {
     case 'rock':
       if(computerChoice === 'paper') {
@@ -43,14 +43,6 @@ function playGame(choice) {
       }
       break;
   }
-
-// dubh
-  // console.log(resultDisplay.classList); // Tampilkan kelas-kelas sebelum dihapus
-  // resultDisplay.classList.remove('greenText', 'redText');
-  // console.log(resultDisplay.classList); // Tampilkan kelas-kelas setelah dihapus
-
-  resultDisplay.classList.remove('greenText', 'redText'); // kok gajalann
-  // resultDisplay.classList.add('defaultText');
 
   switch (message) {
     case "YOU WIN":
